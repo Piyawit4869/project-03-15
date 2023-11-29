@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Login 10</title>
+  	<title>MEEKHWAMSOOK MILK TEA</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -12,19 +12,19 @@
 	<link rel="stylesheet" href="{{ asset('authen/css/style.css') }}">
 
 	</head>
-	<body class="img js-fullheight" style="background-image: url(authen/images/project.jpg);">
+	<body class="img js-fullheight" style="background-image: url(authen/images/forgot.jpg);">
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
 					<h2 class="heading-section">Forgot your password</h2>
-                    <h6>No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.</h6>
+                    <h6 style="color: azure;">No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.</h6>
 				</div>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
-		      	       <h2 style="color: #fff;" class="mb-4 text-center">Have an account?</h2>
+		      	       <h2 style="color: #fff;" class="mb-4 text-center"></h2>
 
                          <x-auth-session-status class="mb-4 text-success" :status="session('status')" />
                         <form class="signin-form" method="POST" action="{{ route('password.email') }}">

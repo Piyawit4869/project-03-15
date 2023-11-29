@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Login 10</title>
+  	<title>MEEKHWAMSOOK MILK TEA</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -23,7 +23,7 @@
 			<div class="row justify-content-center">
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
-		      	       <h3 class="mb-4 text-center">Have an account?</h3>
+		      	       <h3 class="mb-4 text-center"></h3>
 
                         <form class="signin-form" method="POST" action="{{ route('register') }}">
                             @csrf

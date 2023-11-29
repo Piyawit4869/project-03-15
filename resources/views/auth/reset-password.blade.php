@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Login 10</title>
+  	<title>MEEKHWAMSOOK MILK TEA</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="{{ asset('authen/css/style.css') }}">
 
 	</head>
-	<body class="img js-fullheight" style="background-image: url('{{ asset('authen/images/project.jpg') }}');">
+	<body class="img js-fullheight" style="background-image: url('{{ asset('authen/images/forgot.jpg') }}');">
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
