@@ -142,12 +142,6 @@
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
 
-            <!-- Sidebar Message -->
-            <div class="sidebar-card d-none d-lg-flex">
-                <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
-                <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
-                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
-            </div>
 
         </ul>
         <!-- End of Sidebar -->
@@ -415,7 +409,6 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
-
                     <a dropdown-link :href="route('logout')"
                             onclick="event.preventDefault();
                                         this.closest('form').submit();">
@@ -423,7 +416,7 @@
                             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                             <span class="btn btn-primary" href="login.html">Logout</span>
                         </div>
-                    </a dropdown-link>
+                   </a dropdown-link>
                     
                 </form>
                 

@@ -29,11 +29,11 @@
         						@csrf
 
 								<div class="form-group">
-									<input type="text" name="username" class="form-control" placeholder="Username" required>
+									<input style="background-color: rgba(0, 0, 0, 0.589)" type="text" name="username" class="form-control" placeholder="Username" required>
 								</div>
 
 								<div class="form-group">
-									<input id="password" type="password" name="password" class="form-control" placeholder="Password" required>
+									<input style="background-color: rgba(0, 0, 0, 0.589)" id="password" type="password" name="password" class="form-control" placeholder="Password" required>
 									<span toggle="#password-field" toggle-password"></span>
 								</div>
 

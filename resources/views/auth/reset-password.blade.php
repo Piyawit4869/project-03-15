@@ -31,18 +31,18 @@
                             <input type="hidden" name="token" value="{{ $request->route('token') }}">
 
                             <div class="form-group">
-                                <input type="email" name="email" class="form-control" placeholder="Email" value="{{ $request->email }}" required>
+                                <input style="background-color: rgba(0, 0, 0, 0.589)" type="email" name="email" class="form-control" placeholder="Email" value="{{ $request->email }}" required>
                             </div>
                             <x-input-error :messages="$errors->get('email')" class="mt-2 text-danger" />
 
                             <div class="form-group">
-                                <input id="password" type="password" name="password" class="form-control" placeholder="Password" required>
+                                <input style="background-color: rgba(0, 0, 0, 0.589)" id="password" type="password" name="password" class="form-control" placeholder="Password" required>
                                 <span toggle="#password-field" toggle-password"></span>
                             </div>
                             <x-input-error :messages="$errors->get('password')" class="mt-2 text-danger" />
 
                             <div class="form-group">
-                                <input id="password" type="password" name="password_confirmation" class="form-control" placeholder="Confirm Password" required>
+                                <input style="background-color: rgba(0, 0, 0, 0.589)" id="password" type="password" name="password_confirmation" class="form-control" placeholder="Confirm Password" required>
                                 <span toggle="#password-field" toggle-password"></span>
                             </div>
                             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2 text-danger" />
@@ -51,11 +51,7 @@
                                 <button type="submit" class="form-control btn btn-primary submit px-3">Sign Up</button>
                             </div>
 
-                            <div class="form-group d-md-flex">
-                                <div class="w-50 text-md-left">
-                                    <a href="{{ route('login') }}" style="color: #fff">Sing in now</a>
-                                </div>
-                            </div>
+                            
                                     
                         </form>
 	                        

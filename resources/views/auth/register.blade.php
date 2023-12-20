@@ -17,40 +17,39 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">Sing Up</h2>
+					<h2 class="heading-section">Sign Up</h2>
 				</div>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
 		      	       <h3 class="mb-4 text-center"></h3>
-
                         <form class="signin-form" method="POST" action="{{ route('register') }}">
                             @csrf
 
                             <div class="form-group">
-                                <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                <input style="background-color: rgba(0, 0, 0, 0.589)" type="text" name="name" class="form-control" placeholder="Name" required>
                             </div>
 
                             <div class="form-group">
-                                <input type="text" name="username" class="form-control" placeholder="Username" required>
+                                <input style="background-color: rgba(0, 0, 0, 0.589)" type="text" name="username" class="form-control" placeholder="Username" required>
                             </div>
 
                             <div class="form-group">
-                                <input type="text" name="phone" class="form-control" placeholder="Phone" required>
+                                <input style="background-color: rgba(0, 0, 0, 0.589)" type="text" name="phone" class="form-control" placeholder="Phone" required>
                             </div>
 
                             <div class="form-group">
-                                <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                <input style="background-color: rgba(0, 0, 0, 0.589)" type="email" name="email" class="form-control" placeholder="Email" required>
                             </div>
 
                             <div class="form-group">
-                                <input id="password" type="password" name="password" class="form-control" placeholder="Password" required>
+                                <input style="background-color: rgba(0, 0, 0, 0.589)" id="password" type="password" name="password" class="form-control" placeholder="Password" required>
                                 <span toggle="#password-field" toggle-password"></span>
                             </div>
 
                             <div class="form-group">
-                                <input id="password" type="password" name="password_confirmation" class="form-control" placeholder="Confirm Password" required>
+                                <input style="background-color: rgba(0, 0, 0, 0.589)" id="password" type="password" name="password_confirmation" class="form-control" placeholder="Confirm Password" required>
                                 <span toggle="#password-field" toggle-password"></span>
                             </div>
 
@@ -62,8 +61,7 @@
                                 <div class="w-50 text-md-left">
                                     <a href="{{ route('login') }}" style="color: #fff">Sing in now</a>
                                 </div>
-                            </div>
-                                    
+                            </div> 
                         </form>
 	                        <p class="w-100 text-center">&mdash; Or Sign In With &mdash;</p>
 	                    <div class="social d-flex text-center">

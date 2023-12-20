@@ -31,7 +31,7 @@
                             @csrf
 
                             <div class="form-group">
-                                <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                <input style="background-color: rgba(0, 0, 0, 0.589)" type="email" name="email" class="form-control" placeholder="Email" required>
                             </div>
                             <x-input-error :messages="$errors->get('email')" class="mt-2 text-danger" />
                         
