@@ -31,4 +31,6 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('admin/user/index',[UserController::class, 'welcome']);
+Route::get('admin/user/index',[UserController::class, 'index'])->name('u.index');
+Route::get('admin/user/type',[UserController::class, 'type'])->name('u.type');
+Route::get('admin/user/item',[UserController::class, 'item'])->name('u.item');
