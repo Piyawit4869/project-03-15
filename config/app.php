@@ -159,6 +159,8 @@ return [
         /*
          * Package Service Providers...
          */
+        // SweetAlert แจ้งเตือน
+        RealRashid\SweetAlert\SweetAlertServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -183,6 +185,9 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
+        // SweetAlert แจ้งเตือน
+        'Alert' => RealRashid\SweetAlert\SweetAlertServiceProvider::class,
+
     ])->toArray(),
 
 ];

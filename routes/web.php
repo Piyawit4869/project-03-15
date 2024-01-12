@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -11,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
+| be assigned to the "web" middleware group. Make something great!      
 |
 */
 
@@ -31,6 +33,16 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
+//เมนู User
 Route::get('admin/user/index',[UserController::class, 'index'])->name('u.index');
-Route::get('admin/user/type',[UserController::class, 'type'])->name('u.type');
-Route::get('admin/user/item',[UserController::class, 'item'])->name('u.item');
+
+//เมนู Category
+Route::get('admin/category/index',[CategoryController::class, 'index'])->name('c.category');
+Route::get('admin/category/create',[CategoryController::class,'create'])->name('c.create');
+Route::post('admin/category/insret',[CategoryController::class, 'insert']);
+Route::get('admin/category/edit/{id}',[CategoryController::class, 'edit']);
+Route::post('admin/category/update/{id}',[CategoryController::class, 'update']);
+
+//เมนู Products
+Route::get('admin/product/product',[ProductController::class, 'index'])->name('p.product');
+Route::get('admin/product/create',[ProductController::class,'create'])->name('p.create');
