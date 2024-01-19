@@ -158,37 +158,3 @@
 <!-- Content End -->
 @endsection 
 
-<!--<div class="bg-light rounded h-100 p-4">
-    <h6 class="mb-4">User Table</h6>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>Name</th>
-                <th>username</th>
-                <th>Email</th>
-                <th>Phone</th>
-                <th>Status</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach ($user as $u )
-            <tr>
-            
-                <td>{{ $u->id }}</td>
-                <td>{{ $u->name }}</td>
-                <td>{{ $u->username }}</td>
-                <td>{{ $u->email }}</td>
-                <td>{{ $u->phone }}</td>
-                <td>admin</td>
-                <td>
-                    <a href="#"><i class='bx bxs-edit'></i></a>
-                    <a href="#"><i class='bx bx-trash'></i></a>
-                </td>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
-</div>
-</div>//

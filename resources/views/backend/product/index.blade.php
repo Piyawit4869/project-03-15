@@ -117,7 +117,7 @@
         <div class="row g-4">
             
                 <div class="bg-light rounded h-100 p-4">
-                    <h6 class="mb-4">Products Table</h6>
+                    <h6 class="mb-4">Product Table</h6>
                     <div class="m-n2">
                         <a href="{{ route('p.create') }}" type="button" class="btn btn-outline-primary m-2">เพิ่มข้อมูล</a>
                     </div>
@@ -127,7 +127,7 @@
                             <tr>
                                 <th>No</th>
                                 <th>Name</th>
-                                <th>images</th>
+                                <th>Images</th>
                                 <th>Price</th>
                                 <th>Description</th>
                                 <th>Created_at</th>
@@ -136,22 +136,26 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>iphone 14 Pro Max</td>
-                                <td>iphone.jpg</td>
-                                <td>45,990 บาท</td>
-                                <td>ผลิตโดยบริษัทแอปเปิ้ล</td>
-                                <td>2022-07-25 12:46:29</td>
-                                <td>2022-07-25 12:46:29</td>
-                                <td>
-                                    <a href="#" class="btn btn-outline-primary">แก้ไข</>
-                                    <a href="#" class="btn btn-outline-primary">ลข</a>
-                                </td>
-                            </tr>
+                            
+                            @foreach ($product as $pro)
+                                <tr>
+                                    <td>{{ $product->firstItem() + $loop->index }}</td>
+                                    <td>{{ $pro->name }}</td>
+                                    <td>{{ $pro->image }}</td>
+                                    <td>{{ $pro->price }}</td>
+                                    <td>{{ $pro->description }}</td>
+                                    <td>{{ $pro->created_at }}</td>
+                                    <td>{{ $pro->updated_at }}</td>
+                                    <td>
+                                    <a href="" class="btn btn-outline-primary">แก้ไข</>
+                                    <a href="" class="btn btn-outline-danger mx-2">ลบ</a>
+                                    </td>
+                                </tr>
+
+                            @endforeach
                         </tbody>
                     </table>
-                </div>
+                </div>   
             </div>
     <!-- Sale & Revenue End -->
 <!-- Content End -->

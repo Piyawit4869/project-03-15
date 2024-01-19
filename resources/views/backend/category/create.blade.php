@@ -117,7 +117,7 @@
 
       <div class="bg-light rounded h-100 p-4">
         <h6 class="mb-4">Category</h6>
-          <form method="POST" action="{{ url('admin/category/insret') }}">
+          <form method="POST" action="{{ url('admin/category/insert') }}">
             @csrf
             <div class="row mb-3">
               <label for="defaultFormControlInput" class="form-label">&nbsp;Name</label>

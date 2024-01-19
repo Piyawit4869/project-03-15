@@ -39,10 +39,12 @@ Route::get('admin/user/index',[UserController::class, 'index'])->name('u.index')
 //เมนู Category
 Route::get('admin/category/index',[CategoryController::class, 'index'])->name('c.category');
 Route::get('admin/category/create',[CategoryController::class,'create'])->name('c.create');
-Route::post('admin/category/insret',[CategoryController::class, 'insert']);
+Route::post('admin/category/insert',[CategoryController::class, 'insert']);
 Route::get('admin/category/edit/{id}',[CategoryController::class, 'edit']);
 Route::post('admin/category/update/{id}',[CategoryController::class, 'update']);
+Route::get('admin/category/delete/{id}',[CategoryController::class, 'delete']);
 
 //เมนู Products
 Route::get('admin/product/product',[ProductController::class, 'index'])->name('p.product');
 Route::get('admin/product/create',[ProductController::class,'create'])->name('p.create');
+Route::post('admin/product/insert',[ProductController::class, 'insert']);
