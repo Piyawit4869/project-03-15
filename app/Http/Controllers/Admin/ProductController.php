@@ -21,7 +21,7 @@ class ProductController extends Controller
     public function create(){
         $category = Category::all();
         return view('backend.product.create',compact('category'));
-        
+
     }
 
     public function insert(Request $request){
@@ -56,6 +56,7 @@ class ProductController extends Controller
             $pro->image = 'no_image.jpg';
         }
         $pro->save();
+        alert()->success('เพิ่มข้อมูลสำเร็จ','ข้อมูลนี้ถูกเพิ่มแล้ว');
         return redirect('admin/product/product');
     }
 
