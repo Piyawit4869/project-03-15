@@ -76,7 +76,7 @@ class ProductController extends Controller
 
             if($pro->image != 'no_image.jpg'){
                 File::delete(public_path().'/backend/product/'. $pro->image);
-                File::delete(public_path().'/backend/product/resize'. $pro->image);
+                File::delete(public_path().'/backend/product/resize/'. $pro->image);
             }
 
             $filename = Str::random(10).'.'.$request->file('image')->getClientOriginalExtension();
@@ -96,7 +96,7 @@ class ProductController extends Controller
         $pro = Product::find($product_id);
         if($pro->image != 'no_image.jpg'){
             File::delete(public_path().'/backend/product/'. $pro->image);
-            File::delete(public_path().'/backend/product/resize'. $pro->image);
+            File::delete(public_path().'/backend/product/resize/'. $pro->image);
         }
         $pro->delete();
         alert()->success('ลบข้อมูลสำเร็จ','ข้อมูลนี้ถูกลบแล้ว');

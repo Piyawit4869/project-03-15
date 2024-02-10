@@ -20,8 +20,6 @@
                                             <th>username</th>
                                             <th>Email</th>
                                             <th>Phone</th>
-                                            <th>Status</th>
-                                            <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -32,10 +30,6 @@
                                                 <td>{{ $u->username }}</td>
                                                 <td>{{ $u->email }}</td>
                                                 <td>{{ $u->phone }}</td>
-                                                <td>admin</td>
-                                                <td>
-                                                    <a class="btn btn-sm btn-primary" href="">Detail</a>
-                                                </td>
                                             </tr>
                                         @endforeach
                                     </tbody>
@@ -45,4 +39,7 @@
                     </div>
                 </div>
             </div>
-        @endsection
+        </div>
+    </div>
+@endsection
+

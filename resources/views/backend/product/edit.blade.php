@@ -17,7 +17,7 @@
                         <form method="post" enctype="multipart/form-data" action="{{ url('admin/product/update/'.$pro->product_id) }}">
                             @csrf
                             <div class="form-group">
-                                <label class="form-label" for="exampleInputText1">Nmme</label>
+                                <label class="form-label" for="exampleInputText1">Name</label>
                                 <input type="text" name="name" value="{{ $pro->name }}" class="form-control" id="exampleInputText1"
                                     placeholder="กรุณากรอกชื่อสินค้า">
                             </div>
@@ -54,7 +54,7 @@
 
                             <div class="form-group">
                                 <label class="form-label" for="exampleInputphone">Category</label>
-                                <select type="tel" name="category_id" class="form-control" id="exampleInputphone">
+                                <select name="category_id" class="form-control" id="exampleInputphone">
                                     @foreach ($cat as $c)
                                         <option value="{{ $c->category_id }}"
                                             @if ($c->category_id == $pro->category_id)

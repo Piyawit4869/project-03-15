@@ -54,7 +54,7 @@
 
                                 <div class="form-group">
                                     <label class="form-label" for="exampleInputphone">Category</label>
-                                    <select type="tel" name="category_id" class="form-control" id="exampleInputphone">
+                                    <select type="text" name="category_id" class="form-control" id="exampleInputphone">
                                         <option selected>กรุณาเลือกประเภทสินค้า</option>
                                         @foreach ($category as $cat)
                                             <option value="{{ $cat->category_id }}">{{ $cat->name }}</option>
@@ -68,7 +68,7 @@
                                 </div>
 
                                 <div class="mt-3">
-                                    @error('name')
+                                    @error('image')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                     @enderror
                                 </div>

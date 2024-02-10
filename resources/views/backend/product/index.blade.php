@@ -36,7 +36,7 @@
                                             <td>{{ $product->firstItem() + $loop->index }}</td>
                                             <td>{{ $pro->name }}</td>
                                             <td>{{ $pro->category->name }}</td>
-                                            <td> <img src="{{ asset('backend/product/resize/'.$pro->image) }}" alt=""> </td>
+                                            <td><img src="{{ asset('backend/product/resize/'.$pro->image) }}"></td>
                                             <td>{{ $pro->price }}</td>
                                             <td>{{ $pro->description }}</td>
                                             <td>{{ $pro->created_at }}</td>

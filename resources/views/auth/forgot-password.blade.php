@@ -8,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+
 	<link rel="stylesheet" href="{{ asset('authen/css/style.css') }}">
 
 	</head>
@@ -34,19 +34,13 @@
                                 <input style="background-color: rgba(0, 0, 0, 0.589)" type="email" name="email" class="form-control" placeholder="Email" required>
                             </div>
                             <x-input-error :messages="$errors->get('email')" class="mt-2 text-danger" />
-                        
+
                             <div class="form-group">
                                 <button type="submit" class="form-control btn btn-primary submit px-3">Email Password Reset Link</button>
                             </div>
 
-                            <div class="form-group d-md-flex">
-                                <div class="w-50 text-md-left">
-                                    <a href="{{ route('login') }}" style="color: #fff">Sing in now</a>
-                                </div>
-                            </div>
-                                    
                         </form>
-	                        
+
 		            </div>
 				</div>
 			</div>

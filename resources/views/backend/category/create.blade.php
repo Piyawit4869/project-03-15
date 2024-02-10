@@ -16,7 +16,7 @@
                             <form method="POST" action="{{ url('admin/category/insert') }}">
                                 @csrf
                                 <div class="form-group">
-                                    <label class="form-label" for="exampleInputText1">Nmme</label>
+                                    <label class="form-label" for="exampleInputText1">Name</label>
                                     <input type="text" name="name" class="form-control" id="exampleInputText1"
                                         placeholder="กรุณากรอกประเภทสินค้า">
                                 </div>
