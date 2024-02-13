@@ -5,10 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="icon" type="image/png" href="{{asset('authen/images/favicon.ico')}}" />
+
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+
 	<link rel="stylesheet" href="{{ asset('authen/css/style.css') }}">
 
 	</head>
@@ -16,8 +18,8 @@
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">Sign Up</h2>
+				<div class="col-md-6 text-center mb-5" style="margin-top: 5%">
+					<h2 class="heading-section">SIGN UP </h2>
 				</div>
 			</div>
 			<div class="row justify-content-center">
@@ -59,9 +61,9 @@
 
                             <div class="form-group d-md-flex">
                                 <div class="w-50 text-md-left">
-                                    <a href="{{ route('login') }}" style="color: #fff">Sing in now</a>
+                                    <a href="{{ route('login') }}" style="color: #fff">LOG IN</a>
                                 </div>
-                            </div> 
+                            </div>
                         </form>
 		            </div>
 				</div>

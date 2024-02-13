@@ -50,6 +50,9 @@
                                 </tbody>
                             </table>
                         </div>
+                        <div class="mt-3 ms-3">
+                            {{ $product->links('pagination::bootstrap-5') }}
+                        </div>
                     </div>
                 </div>
             </div>

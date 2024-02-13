@@ -14,7 +14,7 @@ use Intervention\Image\Facades\Image;
 class ProductController extends Controller
 {
     public function index(){
-        $product = Product::orderBy('created_at','desc')->Paginate();
+        $product = Product::orderBy('created_at','desc')->Paginate(5);
         return view('backend.product.index',compact('product'));
     }
 
