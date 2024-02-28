@@ -21,6 +21,7 @@
                                         <tr>
                                             <th>No</th>
                                             <th>Name</th>
+                                            <th>Number Product</th>
                                             <th>Created_at</th>
                                             <th>Updated_at</th>
                                             <th>Actions</th>
@@ -31,6 +32,7 @@
                                             <tr>
                                                 <td>{{ $category->firstItem() + $loop->index }}</td>
                                                 <td>{{ $cat->name }}</td>
+                                                <td>{{ $cat->product->count() }}</td>
                                                 <td>{{ $cat->created_at }}</td>
                                                 <td>{{ $cat->updated_at }}</td>
                                                 <td>
