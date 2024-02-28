@@ -8,7 +8,7 @@
                 <div class="card">
                     <div class="card-header d-flex justify-content-between">
                         <div class="header-title">
-                            <h4 class="card-title">Product Table</h4>
+                            <h4 class="card-title">Menu Table</h4>
                         </div>
                         <div class="m-n2">
                             <a href="{{ route('p.create') }}" type="button" class="btn btn-outline-primary m-2">เพิ่มข้อมูล</a>
@@ -21,6 +21,7 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Name</th>
+                                        <th>Number</th>
                                         <th>Category</th>
                                         <th>Images</th>
                                         <th>Price</th>
@@ -35,6 +36,7 @@
                                         <tr>
                                             <td>{{ $product->firstItem() + $loop->index }}</td>
                                             <td>{{ $pro->name }}</td>
+                                            <td>{{ $pro->number }}</td>
                                             <td>{{ $pro->category->name }}</td>
                                             <td><img src="{{ asset('backend/product/resize/'.$pro->image) }}"></td>
                                             <td>{{ $pro->price }}</td>

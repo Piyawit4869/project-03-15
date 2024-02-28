@@ -9,7 +9,7 @@
                 <div class="card">
                     <div class="card-header d-flex justify-content-between">
                         <div class="header-title">
-                            <h4 class="card-title">Edit Product</h4>
+                            <h4 class="card-title">Edit Menu</h4>
                         </div>
                     </div>
                     <div class="card-body">
@@ -24,6 +24,18 @@
 
                             <div class="mt-3">
                                 @error('name')
+                                    <div class="alert alert-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="exampleInputEmail3">Number</label>
+                                <input type="text" name="number" value="{{ $pro->number }}" class="form-control" id="exampleInputEmail3"
+                                     placeholder="กรุณากรอกจำนวนสินค้าสินค้า">
+                            </div>
+
+                            <div class="mt-3">
+                                @error('number')
                                     <div class="alert alert-danger">{{ $message }}</div>
                                 @enderror
                             </div>

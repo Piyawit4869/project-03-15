@@ -41,7 +41,7 @@
                                         </a>
                                         <div class="progress-detail">
                                             <p class="mb-2">Category</p>
-                                            <h4 class="counter">สินค้า&nbsp; {{ $c->count() }} &nbsp;ประเภท</h4>
+                                            <h4 class="counter">&nbsp; {{ $c->count() }} &nbsp;ประเภท</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -60,7 +60,7 @@
                                             </div>
                                         </a>
                                         <div class="progress-detail">
-                                            <p class="mb-2">Product</p>
+                                            <p class="mb-2">Menu</p>
                                             <h4 class="counter">สินค้า&nbsp; {{ $p->count() }} &nbsp;รายการ</h4>
                                         </div>
                                     </div>

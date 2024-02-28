@@ -146,7 +146,7 @@
                                         fill="currentColor"></path>
                                 </svg>
                             </i>
-                            <span class="item-name">Product</span>
+                            <span class="item-name">Menu</span>
                         </a>
                     </li>
                     <li>

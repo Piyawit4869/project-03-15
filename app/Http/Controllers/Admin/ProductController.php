@@ -30,6 +30,7 @@ class ProductController extends Controller
         $validated = $request->validate([
             'name' => 'required|max:255',
             'price' => 'required|max:255',
+            'number' => 'required|numeric',
             'description' => 'required',
             'image' => 'mimes:jpg,jpeg,png',
         ],
@@ -38,12 +39,15 @@ class ProductController extends Controller
             'name.max' => 'กรอกข้อมูลได้ 255 ตัวอักษร',
             'price.required' => 'กรุณากรอกข้อมูลราคาสินค้า',
             'price.max' => 'กรอกข้อมูลได้ 255 ตัวอักษร',
+            'number.required' => 'กรุณากรอกข้อมูลจำนวนสินค้า',
+            'number.numeric' => 'กรอกข้อมูลเฉพาะตัวเลขจำนวนเต็มเท่านั้น',
             'description.required' => 'กรุณากรอกข้อมูลรายละเอียดสินค้า',
             'image.mimes' => 'อัพโหลดภาพที่มีนามสกุล .jpg .jpeg .png ได้เท่านั้น',
         ]);
 
         $pro = new Product();
         $pro->name = $request->name;
+        $pro->number = $request->number;
         $pro->price = $request->price;
         $pro->description = $request->description;
         $pro->category_id = $request->category_id;
@@ -67,8 +71,28 @@ class ProductController extends Controller
     }
 
     public function update(Request $request, $product_id){
+         //ป้องกันการกรอกข้อมูลผ่านForm
+         $validated = $request->validate([
+            'name' => 'required|max:255',
+            'price' => 'required|max:255',
+            'number' => 'required|numeric',
+            'description' => 'required',
+            'image' => 'mimes:jpg,jpeg,png',
+        ],
+        [
+            'name.required' => 'กรุณากรอกข้อมูลสินค้า',
+            'name.max' => 'กรอกข้อมูลได้ 255 ตัวอักษร',
+            'price.required' => 'กรุณากรอกข้อมูลราคาสินค้า',
+            'price.max' => 'กรอกข้อมูลได้ 255 ตัวอักษร',
+            'number.required' => 'กรุณากรอกข้อมูลจำนวนสินค้า',
+            'number.numeric' => 'กรอกข้อมูลเฉพาะตัวเลขจำนวนเต็มเท่านั้น',
+            'description.required' => 'กรุณากรอกข้อมูลรายละเอียดสินค้า',
+            'image.mimes' => 'อัพโหลดภาพที่มีนามสกุล .jpg .jpeg .png ได้เท่านั้น',
+        ]);
+
         $pro = Product::find($product_id);
         $pro->name = $request->name;
+        $pro->number = $request->number;
         $pro->price = $request->price;
         $pro->description = $request->description;
         $pro->category_id = $request->category_id;

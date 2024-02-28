@@ -9,7 +9,7 @@
                     <div class="card">
                         <div class="card-header d-flex justify-content-between">
                             <div class="header-title">
-                                <h4 class="card-title">Create Product</h4>
+                                <h4 class="card-title">Create Menu</h4>
                             </div>
                         </div>
                         <div class="card-body">
@@ -17,13 +17,25 @@
                             <form method="post" enctype="multipart/form-data" action="{{ url('admin/product/insert') }}">
                                 @csrf
                                 <div class="form-group">
-                                    <label class="form-label" for="exampleInputText1">Nmme</label>
+                                    <label class="form-label" for="exampleInputText1">Name</label>
                                     <input type="text" name="name" class="form-control" id="exampleInputText1"
                                         placeholder="กรุณากรอกชื่อสินค้า">
                                 </div>
 
                                 <div class="mt-3">
                                     @error('name')
+                                        <div class="alert alert-danger">{{ $message }}</div>
+                                    @enderror
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="exampleInputEmail3">Number</label>
+                                    <input type="text" name="number" class="form-control" id="exampleInputEmail3"
+                                         placeholder="กรุณากรอกจำนวนสินค้า">
+                                </div>
+
+                                <div class="mt-3">
+                                    @error('number')
                                         <div class="alert alert-danger">{{ $message }}</div>
                                     @enderror
                                 </div>
